@@ -1,10 +1,13 @@
-# AFTC.css / AFTC.scss
+# AFTC.css / AFTC.scss / AFTC.min.css
 
-A collection of classes, fixes, short hand classes and debug utility classes to speed up development.
-Designed so that many css commands are defined as css classes eg class="display-none", applies "display:none;"
+AFTC.css is a collection of quick and useful css class styles which allow for rapid styling, debuging and prototyping.
 
-# Files
-aftc.css (uncompressed)
-aftc.scss (scss)
+They are logical to use and follow conventional css naming guidelines (aaa-aaa, aaa-bbb-ccc etc), eg:
 
-For less, rename aftc.scss to aftc.less and remove @import leaving .class where necessary.
+ - display-none
+ - font-size-14 or txt-14
+ - text-color-<color code> or txt-<color code>
+ - border-FFFFFF
+ - bg-FFFFFF
+ - hgap-<value>
+ - clearFix
