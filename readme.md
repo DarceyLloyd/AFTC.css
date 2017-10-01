@@ -6,8 +6,36 @@ They are logical to use and follow conventional css naming guidelines (aaa-aaa, 
 
  - display-none
  - font-size-14 or txt-14
- - text-color-<color code> or txt-<color code>
+ - text-color-[hex color code] or txt-[hex color code]
  - border-FFFFFF
  - bg-FFFFFF
- - hgap-<value>
+ - hgap-[gap]
+ - round-[0 to 15]
+ - rotate-[0 to 270 steps of 45 deg]
+ - rotate-neg-[0 to 270 steps of 45 deg]
+ - scale-[values of 10 to 200 steps of 10 %]
+ - padding-[value]
+ - padding-left / right / top / bottom
+ - margin-[value]
+ - margin-left / right / top / bottom
+ - hide
+ - show
+ - visible
+ - hidden
+ - bgFacebook
+ - bgGoogle
+ - bgTwitter
+ - padding-auto
+ - margin-auto
+ - text-align-[left|center|right]
+ - hand
+ - pos-[fixed|relative|absolute|static]
+ - display-[none|block|inline-block|inline]
+ - center
+ - white-space-normal
+ - white-space-nowrap
+ - no-wrap
+ - txt-bold
+ - txt-underline
+ - txt-italic
  - clearFix
