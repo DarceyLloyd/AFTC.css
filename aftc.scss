@@ -14,16 +14,6 @@
 /* Collection of quick CSS styles which are commonly used */
 
 
-/* STYLING OF PHP ERROR MESSAGES IN WAMP */
-.xdebug-error { font-size: 10px !important; }
-pre {background: #FFFFFF; border: 1px solid; font-size: 10px !important; }
-
-/* Fix form sizes */
-textarea,input,select,button {
-  box-sizing: border-box;
-}
-
-
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @for $i from 1 through 10 {
