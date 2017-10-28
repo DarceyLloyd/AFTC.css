@@ -1,4 +1,4 @@
-# <b>AFTC.css / AFTC.scss / AFTC.min.css</b>
+# <b>AFTC.css / AFTC.scss</b>
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Darcey%2eLloyd%40gmail%2ecom&lc=GB&item_name=Darcey%20Lloyd%20Developer%20Donation&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 AFTC.css is a collection of styles with an option reset to allow for rapid build, rapid prototyping and quick and easy access to basic essentials.
@@ -104,6 +104,26 @@ I will only list the ones I use most often, see file for full list.
 - pad-sm-left-5 to 100. Steps of 5 to 50 then steps of 10 to 100
 - pad-md-left-5 to 100. Steps of 5 to 50 then steps of 10 to 100
 - pad-lg-left-5 to 100. Steps of 5 to 50 then steps of 10 to 100
+
+
+
+<br>
+<br>
+
+## <b>Font sizes</b>
+- font-size-xxxs
+- font-size-xxs
+- font-size-xs
+- font-size-sm
+- font-size-md
+- font-size-nm || - font-size-sd || both are 100%
+- font-size-sd
+- font-size-lg
+- font-size-xl
+- font-size-xxl
+- font-size-xxxl
+
+
 
 <br>
 <br>
