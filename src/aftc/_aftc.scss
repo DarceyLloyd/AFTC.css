@@ -1,0 +1,136 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+/* STYLING OF PHP xdebug ERRORS */
+.xdebug-error { font-size: 10px !important; }
+
+/* Fix form sizes */
+textarea,input,select,button {
+  box-sizing: border-box;
+}
+
+
+// Utilities
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.visibility-visible, .visible { visibility: visible !important; }
+.visibility-hidden, .hidden { visibility: hidden !important; }
+
+
+.text-align-left, .txt-left { text-align: left !important; }
+.text-align-right, .txt-right { text-align: right !important; }
+.text-align-center, .txt-center { text-align: center !important; }
+
+.hand, .pointer {
+  cursor: pointer;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pos-fixed { position: fixed !important; }
+.pos-relative { position: relative !important; }
+.pos-absolute { position: absolute !important; }
+.pos-static { position: static !important; }
+
+.display-none { display: none !important; }
+.display-block { display: block !important; }
+.display-inline-block { display: inline-block !important; }
+.inline-block { display: inline-block !important; }
+.display-inline { display: inline !important; }
+.display-table { display: table !important; }
+
+
+
+.center { text-align: center !important; }
+.text-align-center { text-align: center !important; }
+.text-align-left { text-align: left !important; }
+.text-align-right { text-align: right !important; }
+
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+
+.overflow-none { overflow: none !important; }
+.overflow-hidden { overflow: hidden !important; }
+.overflow-visible { overflow: visible !important; }
+.overflow-scroll { overflow: scroll !important; }
+
+
+
+.white-space-normal { white-space: normal !important; }
+.white-space-nowrap { white-space: nowrap !important; }
+
+.txt-bold { font-weight: bold; }
+.txt-normal { font-weight: normal; }
+.txt-underline { text-decoration: underline; }
+.txt-underline-none { text-decoration: none; }
+.txt-no-underline { text-decoration: none; }
+.txt-no-wrap { white-space: nowrap !important; }
+.no-wrap { white-space: nowrap !important; }
+.single-line { white-space: nowrap !important; }
+.txt-italic { font-style: italic; }
+.italic { font-style: italic; }
+
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container .col {
+  overflow: hidden;
+}
+
+.flex-container .col-order-1 { order: 1; }
+.flex-container .col-order-2 { order: 2; }
+.flex-container .col-order-3 { order: 3; }
+.flex-container .col-order-4 { order: 4; }
+
+.flex-container .col-fluid {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.flex-container .col-fixed {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+
+
+@media print
+{
+  .no-print, .no-print *
+  {
+    display: none !important;
+  }
+}
+
+.clearFix {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+
+.clearFixAfter:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}

@@ -1,0 +1,26 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+.box-shadow-top {
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box-shadow-bottom {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box-shadow-left {
+    -webkit-box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box-shadow-right {
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}

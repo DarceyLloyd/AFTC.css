@@ -1,0 +1,45 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$numListRotations: 0,45,90,135,180,225,270,315;
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@each $num in $numListRotations {
+
+  .rotate-#{$num} { 
+    transform: rotate(#{$num}deg);
+    -webkit-transform: rotate(#{$num}deg);
+    -moz-transform: rotate(#{$num}deg);
+    -o-transform: rotate(#{$num}deg);
+    -ms-transform: rotate(#{$num}deg);
+  }
+
+  .rotate-neg-#{$num} { 
+    transform: rotate(-#{$num}deg);
+    -webkit-transform: rotate(-#{$num}deg);
+    -moz-transform: rotate(-#{$num}deg);
+    -o-transform: rotate(-#{$num}deg);
+    -ms-transform: rotate(-#{$num}deg);
+  }
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@for $i from 1 through 20 {
+  $t: $i*10;
+  $v: $i/10;
+  .scale-#{$t} { 
+    transform: scale($v);
+    -webkit-transform: scale($v);
+    -moz-transform: scale($v);
+    -o-transform: scale($v);
+    -ms-transform: scale($v);    
+  }
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+

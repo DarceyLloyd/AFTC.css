@@ -1,0 +1,61 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+// Common color borders
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@each $color in $commonColors {
+
+  $colString: " " + $color;
+  $selectorName: str-replace($colString, ' #', '');
+
+  .bd-#{$selectorName} {
+    border: 1px solid $color;
+  }
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$numListBorderRadius: 0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,20,25,30,35,40,45,50;
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@each $num in $numListBorderRadius {
+
+  .round-#{$num} {
+    border-radius: #{$num}px;
+    //-moz-border-radius: #{$num}px;
+    //-webkit-border-radius: #{$num}px;
+  }
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+
+.round-left {
+  border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+}
+
+.round-right {
+  border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+}
+
+.round-top {
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.round-bottom {
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+}

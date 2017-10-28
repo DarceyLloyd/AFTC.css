@@ -1,0 +1,94 @@
+// Background Colors (have to be done in 2 parts and gray on its own)
+
+
+.bg-facebook {
+    background: #395f9e !important;
+  }
+  
+  .bg-google {
+    background: #d01820 !important;
+  }
+  
+  .bg-twitter {
+    background: #00adef !important;
+  }
+  
+
+
+
+@for $i from 1 through 5
+{
+    $p: (100/5) * $i;
+
+    .bg-red-#{$i} {
+        $c: mix(#FF0000,#000000,$p);
+        background: $c;
+    }
+
+    .bg-green-#{$i} {
+        $c: mix(#00FF00,#000000,$p);
+        background: $c;
+    }
+
+    .bg-blue-#{$i} {
+        $c: mix(#0000FF,#000000,$p);
+        background: $c;
+    }
+}
+
+
+
+
+
+@for $i from 1 through 5
+{
+    $label: $i + 5;
+    $p: (100/5) * $i;
+
+    .bg-red-#{$label} {
+        $c: mix(#FFFFFF,#FF0000,$p);
+        background: $c;
+    }
+
+    .bg-green-#{$label} {
+        $c: mix(#FFFFFF,#33ff33,$p);
+        background: $c;
+    }
+
+    .bg-blue-#{$label} {
+        $c: mix(#FFFFFF,#0000FF,$p);
+        background: $c;
+    }
+}
+
+
+
+
+@for $i from 1 through 10
+{
+    $p: $i * 10;
+ 
+    .bg-gray-#{$i} {
+        $c: mix(#FFFFFF,#000000,$p);
+        background: $c;
+    }
+}
+
+
+
+
+
+// Common color borders
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@each $color in $commonColors {
+    
+      $colString: " " + $color;
+      $selectorName: str-replace($colString, ' #', '');
+    
+      .bg-#{$selectorName} {
+        background: $color;
+      }
+    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+    

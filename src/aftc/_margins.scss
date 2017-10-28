@@ -1,0 +1,36 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$numListMargin: 0,1,2,3,4,5,10,15,20,25,30,40,50,75,100,150,200,250,300,350,400,450,500;
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@each $num in $numListMargin {
+ 
+  .margin-#{$num} {
+    margin:#{$num}px !important;
+  }
+
+  .margin-left-#{$num} {
+    margin-left:#{$num}px !important;
+  }
+
+  .margin-right-#{$num} {
+    margin-right:#{$num}px !important;
+  }
+
+  .margin-top-#{$num} {
+    margin-top:#{$num}px !important;
+  }
+
+  .margin-bottom-#{$num} {
+    margin-bottom:#{$num}px !important;
+  }
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+.margin-auto {
+  margin: auto !important;
+}

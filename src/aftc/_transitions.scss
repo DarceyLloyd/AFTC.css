@@ -1,0 +1,17 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+$transitionLabels: 1,2,3,4,5,6,"1s","2s";
+$transitionTimes: 0.1, 0.2, 0.3, 0.4, 0.5,0.75,1,2;
+
+@for $i from 1 through 4 {
+    $label: nth($transitionLabels,$i);
+    $t: nth($transitionTimes,$i);
+    .transition-time-#{$label} {
+        -webkit-transition-duration: #{$t};
+        -moz-transition-duration: #{$t};
+        -o-transition-duration: #{$t};
+        transition-duration: #{$t};
+      }
+}
+

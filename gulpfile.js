@@ -6,10 +6,37 @@ var rename = require("gulp-rename");
 var watch = require("gulp-watch");
 
 
-gulp.task('build', function () {
+gulp.task('build', ["build-aftc","build-reset","build-combined"]);
+
+gulp.task('watch', function () {
+    gulp.watch("./src/**/*.scss", ["build-aftc","build-reset","build-combined"]);
+});
+
+
+gulp.task('build-aftc', function () {
     return gulp.src('./src/aftc.scss')
         .pipe(rename("aftc.min.css"))
         .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCss())
+        .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('build-reset', function () {
+    return gulp.src('./src/reset.scss')
+        .pipe(rename("reset.min.css"))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCss())
+        .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('build-combined', function () {
+    return gulp.src('./src/aftc.combined.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(rename(function (path) {
+            //path.dirname += "/ciao";
+            path.basename += ".min";
+            //path.extname = ".md"
+        }))
         .pipe(minifyCss())
         .pipe(gulp.dest('./dist/'));
 });

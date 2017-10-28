@@ -1,0 +1,114 @@
+// NOTE: It is recommended that you use an editor with css intelisense capabilities
+
+
+
+// Padding at breakpoints
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$padValues: 5,10,15,20,25,30,35,40,45,50,60,70,80,90,100;
+
+
+
+
+@media (max-width: $screen-xs) {
+  @each $p in $padValues {
+    .pad-xs-left-#{$p} {
+      padding-left: #{$p}px !important;
+      //border: 1px solid #990000;
+    }
+  }
+}
+@media (max-width:$screen-sm) and (min-width:$screen-xs) {
+  @each $p in $padValues {
+    .pad-sm-left-#{$p} {
+      padding-left: #{$p}px !important;
+      //border: 1px solid #009900;
+    }
+  }
+}
+
+@media (max-width:$screen-md) and (min-width:$screen-sm) {
+  @each $p in $padValues {
+    .pad-md-left-#{$p} {
+      padding-left: #{$p}px !important;
+      //border: 1px solid #000099;
+    }
+  }
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media (max-width:$screen-lg) and (min-width:$screen-md) {
+
+  @each $p in $padValues {
+    .pad-lg-left-#{$p} {
+      padding-left: #{$p}px !important;
+      //border: 1px solid #009999;
+    }
+  }
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+
+
+
+
+
+
+
+// Centering
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.col-centered, .col-center {
+  float: none;
+  margin: 0 auto;
+}
+
+// Resonsive centering
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.center-xs {
+
+}
+.center-sm {
+
+}
+
+.center-md {
+
+}
+
+.center-lg {
+
+}
+
+@media (max-width: $screen-xs) {
+  .center-xs {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .center-sm {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .center-md {
+    text-align: center !important;
+    //border: 1px solid #FFCC00 !important;
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .center-lg {
+    text-align: center !important;
+  }
+}
+
+
+
+
