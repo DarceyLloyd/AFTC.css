@@ -110,27 +110,3 @@ textarea,input,select,button {
 
 
 
-@media print
-{
-  .no-print, .no-print *
-  {
-    display: none !important;
-  }
-}
-
-.clearFix {
-  content: " "; /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-
-.clearFixAfter:after {
-  content: " "; /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}

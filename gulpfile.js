@@ -6,18 +6,24 @@ var rename = require("gulp-rename");
 var watch = require("gulp-watch");
 
 
-gulp.task('build', ["build-aftc","build-reset","build-combined"]);
+gulp.task('build', ["build-aftc-prod","build-aftc-dev","build-reset","build-combined"]);
 
 gulp.task('watch', function () {
-    gulp.watch("./src/**/*.scss", ["build-aftc","build-reset","build-combined"]);
+    gulp.watch("./src/**/*.scss", ["build-aftc-prod","build-aftc-dev","build-reset","build-combined"]);
 });
 
 
-gulp.task('build-aftc', function () {
+gulp.task('build-aftc-prod', function () {
     return gulp.src('./src/aftc.scss')
         .pipe(rename("aftc.min.css"))
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCss())
+        .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('build-aftc-dev', function () {
+    return gulp.src('./src/aftc.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./dist/'));
 });
 
