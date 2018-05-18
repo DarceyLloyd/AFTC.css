@@ -41,17 +41,19 @@ textarea,input,select,button {
   user-select: none;
 }
 
-.pos-fixed { position: fixed !important; }
-.pos-relative { position: relative !important; }
-.pos-absolute { position: absolute !important; }
-.pos-static { position: static !important; }
+.fixed { position: fixed !important; }
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+.static { position: static !important; }
 
 .display-none { display: none !important; }
 .display-block { display: block !important; }
 .display-inline-block { display: inline-block !important; }
-.inline-block { display: inline-block !important; }
 .display-inline { display: inline !important; }
-.display-table { display: table !important; }
+
+.block { display: block !important; }
+.inline-block { display: inline-block !important; }
+.inline { display: inline !important; }
 
 
 
@@ -85,27 +87,49 @@ textarea,input,select,button {
 .italic { font-style: italic; }
 
 
-.flex-container {
+.flex-row {
   display: flex;
 }
 
-.flex-container .col {
+.flex-row .col {
   overflow: hidden;
 }
 
-.flex-container .col-order-1 { order: 1; }
-.flex-container .col-order-2 { order: 2; }
-.flex-container .col-order-3 { order: 3; }
-.flex-container .col-order-4 { order: 4; }
+.flex-row .col-order-1 { order: 1; }
+.flex-row .col-order-2 { order: 2; }
+.flex-row .col-order-3 { order: 3; }
+.flex-row .col-order-4 { order: 4; }
+.flex-row .col-order-4 { order: 5; }
+.flex-row .col-order-4 { order: 6; }
 
-.flex-container .col-fluid {
+.flex-row .col-fluid {
   flex-grow: 1;
   flex-shrink: 0;
 }
 
-.flex-container .col-fixed {
+.flex-row .col-fixed {
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col-50 {
+  flex: 0 0 50%;
+}
+
+.flex-col-33 {
+  flex: 0 0 33.32%;
+}
+
+.flex-col-25 {
+  flex: 0 0 25%;
+}
+
+.flex-col-inner {
+  padding: 10px;
 }
 
 

@@ -1,12 +1,14 @@
 # <b>AFTC.css / AFTC.scss</b>
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Darcey%2eLloyd%40gmail%2ecom&lc=GB&item_name=Darcey%20Lloyd%20Developer%20Donation&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
-AFTC.css is a collection of styles with an option reset to allow for rapid build, rapid prototyping and quick and easy access to basic essentials.
+AFTC.css is a collection of styles with an optional reset to allow for rapid build, rapid prototyping and quick and easy access to basic essentials.
 
 ### It is recommended that you use an editor with CSS intelisense capabilities.
 
 
 ## <b>What's new?</b>
+- adjusted dist file builds, aftc.css now includes reset, aftc.no-reset.css doesn't include reset.css
+- Added some quick flex row, flex col styles
 - Re-added a reset I used to use, enhanced it a bit and added it in.
 - Updated gulp build and watch commands ("gulp build" or "gulp watch") to now build:
     - aftc.min.css
