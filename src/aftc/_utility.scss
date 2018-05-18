@@ -12,7 +12,7 @@ textarea,input,select,button {
 
 // Utilities
 
-.hide {
+.hide, .hidden {
   display: none !important;
 }
 
@@ -21,12 +21,14 @@ textarea,input,select,button {
 }
 
 .visibility-visible, .visible { visibility: visible !important; }
-.visibility-hidden, .hidden { visibility: hidden !important; }
+.visibility-hidden { visibility: hidden !important; }
 
 
 .text-align-left, .txt-left { text-align: left !important; }
 .text-align-right, .txt-right { text-align: right !important; }
 .text-align-center, .txt-center { text-align: center !important; }
+.center { text-align: center !important; }
+
 
 .hand, .pointer {
   cursor: pointer;
@@ -57,10 +59,7 @@ textarea,input,select,button {
 
 
 
-.center { text-align: center !important; }
-.text-align-center { text-align: center !important; }
-.text-align-left { text-align: left !important; }
-.text-align-right { text-align: right !important; }
+
 
 .float-left { float: left !important; }
 .float-right { float: right !important; }
