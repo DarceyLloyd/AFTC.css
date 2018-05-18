@@ -4,22 +4,24 @@
 @import "aftc/_mixins";
 @import "aftc/_functions";
 
-@import "aftc/_bootstrap"; // < 4kb
-@import "aftc/_backgrounds"; // 2kb
-@import "aftc/_borders"; // 2kb
+@import "aftc/_bootstrap";
+@import "aftc/_backgrounds";
+@import "aftc/_borders";
 
-@import "aftc/_fonts"; // 4kb
-@import "aftc/_margins"; // 5kb
-@import "aftc/_padding"; // 5kb
-@import "aftc/_spacing"; // 3kb
+@import "aftc/_fonts";
+@import "aftc/_margins";
+@import "aftc/_padding";
+@import "aftc/_spacing";
 
-@import "aftc/_transitions"; // < 1kb
+@import "aftc/_transitions";
 
-@import "aftc/_box-shadow"; // < 1kb
-@import "aftc/_transformations"; // 5kb
+@import "aftc/_box-shadow";
+@import "aftc/_transformations";
 
-@import "aftc/_utility"; // < 3kb
-@import "aftc/_print"; // < 1kb
+@import "aftc/_flex";
+
+@import "aftc/_utility";
+@import "aftc/_print";
 
 
 
