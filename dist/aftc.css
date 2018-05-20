@@ -2223,16 +2223,25 @@ input, button, select, textarea, select {
 .flex-row .col {
   overflow: hidden; }
 
-.flex-2-col, .flex-col-50 {
+.flex-col-80 {
+  flex: 0 0 80%; }
+
+.flex-col-75 {
+  flex: 0 0 75%; }
+
+.flex-col-66 {
+  flex: 0 0 66%; }
+
+.flex-col-50 {
   flex: 0 0 50%; }
 
-.flex-3-col, .flex-col-33 {
+.flex-col-33 {
   flex: 0 0 33.32%; }
 
-.flex-4-col, .flex-col-25 {
+.flex-col-25 {
   flex: 0 0 25%; }
 
-.flex-5-col, .flex-col-20 {
+.flex-col-20 {
   flex: 0 0 20%; }
 
 .flex-8-col {
